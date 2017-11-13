@@ -1,0 +1,29 @@
+{
+  "name": "fitordead-api",
+  "version": "0.0.0",
+  "description": "Server API for fitOrDead app",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Skoryts/fitOrDead-api.git"
+  },
+  "keywords": [
+    "nodejs",
+    "mysql",
+    "expressjs",
+    "health",
+    "foodtracker"
+  ],
+  "author": "Skoryts",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/Skoryts/fitOrDead-api/issues"
+  },
+  "homepage": "https://github.com/Skoryts/fitOrDead-api#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
