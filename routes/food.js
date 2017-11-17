@@ -1,7 +1,7 @@
 const router = require('express').Router();
 
 router.get('/search', (req, res) => {
-    res.send('List of food')
+    res.json(['meat', 'apple', 'potato'])
 });
 
 router.post('/new', (req, res) => {

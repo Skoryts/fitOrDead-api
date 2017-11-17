@@ -4,7 +4,7 @@
   "description": "Server API for fitOrDead app",
   "main": "app.js",
   "scripts": {
-    "start": "node app"
+    "start": "nodemon app"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,9 @@
   },
   "homepage": "https://github.com/Skoryts/fitOrDead-api#readme",
   "dependencies": {
-    "express": "^4.16.2"
+    "body-parser": "^1.18.2",
+    "compression": "^1.7.1",
+    "express": "^4.16.2",
+    "helmet": "^3.9.0"
   }
 }
