@@ -1,19 +1,10 @@
 const User = require('../db/user');
 
 class UserService {
-  constructor(){
-    this.user = new User();
-  }
 
-  static getGoal() {
-    //TODO: Make request to UserAR
-    // return this.user.getGoal();
-    return {
-      protein: 160,
-      fats: 50,
-      carbohydrates: 300,
-      calories: 2200
-    }
+  static getGoal(userID) {
+    const user = new User(userID);
+    return user.getGoal();
   }
 
   static updateGoal(newGoal) {

@@ -14,9 +14,9 @@ app.use(bodyParser.json());
 app.use('/user', userRoutes);
 app.use('/food', foodRoutes);
 
-app.use((err, req, res) => {
-   res.status(500);
-   res.end(err)
-});
+// app.use((err, req, res) => {
+//    res.status(500);
+//    res.end(err)
+// });
 
 app.listen(3000, () => console.log('Server listening on port 3000'));
