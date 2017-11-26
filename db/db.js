@@ -11,8 +11,17 @@ class DB {
     this.connection.connect()
   }
 
-  query(query){
-    this.connection.query(query)
+  query(sql){
+    return new Promise((resolve, reject) => {
+      this.connection.query(sql, (err, rows) => {
+        if (err) {
+          console.log(err);
+          reject(err);
+        } else {
+          resolve(rows);
+        }
+      });
+    });
   }
 }
 

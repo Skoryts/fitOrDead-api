@@ -2,8 +2,9 @@ const router = require('express').Router();
 const userService = require('../services/user');
 
 router.get('/goal/:userId', (req, res) => {
-  const goal = userService.getGoal(req.params.userId);
-  res.send(goal)
+  userService.getGoal(req.params.userId)
+    .then(goal => res.send(goal[0]))
+
 });
 
 router.post('/goal', (req, res) => {
